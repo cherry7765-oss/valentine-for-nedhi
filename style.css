@@ -20,7 +20,7 @@ button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 #yesBtn {
@@ -46,7 +46,7 @@ button {
     margin: auto;
     background: white;
     padding: 50px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 
