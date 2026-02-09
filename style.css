@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: center;  /* center buttons horizontally */
     align-items: center;      /* center vertically */
-    gap: 20px;                /* space between Yes and No */
+    gap: 50px;                /* space between Yes and No */
 }
 
 button {
