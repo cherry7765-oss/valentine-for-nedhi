@@ -10,8 +10,12 @@ body {
 
 .buttons {
     margin-top: 20px;
-    position: relative;
+    position: relative;  /* keep No button relative to container */
     height: 50px;
+    display: flex;
+    justify-content: center;  /* center buttons horizontally */
+    align-items: center;      /* center vertically */
+    gap: 20px;                /* space between Yes and No */
 }
 
 button {
