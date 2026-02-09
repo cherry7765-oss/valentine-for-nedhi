@@ -7,7 +7,6 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-
 .buttons {
     margin-top: 20px;
     position: relative;
@@ -20,7 +19,11 @@ button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: 0.1s;
+    transition: 0.25s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
 }
 
 #yesBtn {
@@ -32,15 +35,15 @@ button {
     background-color: #808080;
     color: white;
     position: absolute;
-    transition: left 0.01s ease, top 0.01s ease; /* This creates the smooth "gliding" movement */
+    transition: 0.25s ease;
     z-index: 10;
-} 
+}
 
 .container {
     position: relative;
-    width: 80%;            /* Adjusts to screen size */
-    max-width: 400px;      /* Keeps it from getting too wide */
-    min-height: 300px;     /* Minimum size, but can grow */
+    width: 80%;
+    max-width: 400px;
+    min-height: 300px;
     margin: auto;
     background: white;
     padding: 30px;
@@ -48,7 +51,6 @@ button {
     text-align: center;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
-
 
 
 
