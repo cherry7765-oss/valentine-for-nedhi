@@ -11,6 +11,6 @@ noBtn.addEventListener("mouseover", () => {
 });
 
 yesBtn.addEventListener("click", () => {
-    question.innerHTML = "YAY! Can't wait! 🥰";
+    question.innerHTML = "YAY! Can't wait, Nedhi! 🥰"; 
     noBtn.style.display = "none";
 });
