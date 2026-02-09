@@ -21,25 +21,72 @@ noBtn.addEventListener("mouseover", () => {
 });
 
 yesBtn.addEventListener("click", () => {
-    // 1. Change the main question text
     question.innerHTML = "YAY! Can't wait, Nedhi! 🥰";
-
-    // 2. Select the area where buttons were
-    const buttonsContainer = document.querySelector(".buttons");
     
-    // 3. Replace buttons with a reliable GIF and a sub-header
-    buttonsContainer.innerHTML = `
-        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-top: 20px;">
-            <img src="https://media.tenor.com/gU_79U6A2pgAAAAM/peach-goma-love.gif" 
-                 alt="Cute Cat" 
-                 style="width: 150px; height: auto; border-radius: 10px;">
-            <h2 style="color: #ff4d6d; margin-top: 15px; font-size: 1.5rem;">Happy Valentine's Day! ❤️</h2>
-        </div>
-    `;
-
-    // 4. Make sure the No button is gone
+    // Hide the buttons
+    document.querySelector(".buttons").style.display = "none";
     noBtn.style.display = "none";
+
+    // Show the GIF container and set the source
+    const gifContainer = document.getElementById("gifContainer");
+    const celebrationGif = document.getElementById("celebrationGif");
+    
+    gifContainer.style.display = "block";
+    // Using a direct link from Giphy's media server
+    celebrationGif.src = "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHY5M2Zidm5mZzRyeGZ6eGZ6eGZ6eGZ6eGZ6eGZ6eGZ6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/MDJ9IbM3vuzAbpG7bO/giphy.gif";
+
+    // Add the extra banner text
+    const message = document.createElement("h2");
+    message.innerHTML = "Happy Valentine's Day! ❤️";
+    message.style.color = "#ff4d6d";
+    message.style.marginTop = "15px";
+    gifContainer.appendChild(message);
 });
+yesBtn.addEventListener("click", () => {
+    question.innerHTML = "YAY! Can't wait, Nedhi! 🥰";
+    
+    // Hide the buttons
+    document.querySelector(".buttons").style.display = "none";
+    noBtn.style.display = "none";
+
+    // Show the GIF container and set the source
+    const gifContainer = document.getElementById("gifContainer");
+    const celebrationGif = document.getElementById("celebrationGif");
+    
+    gifContainer.style.display = "block";
+    // Using a direct link from Giphy's media server
+    celebrationGif.src = "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHY5M2Zidm5mZzRyeGZ6eGZ6eGZ6eGZ6eGZ6eGZ6eGZ6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/MDJ9IbM3vuzAbpG7bO/giphy.gif";
+
+    // Add the extra banner text
+    const message = document.createElement("h2");
+    message.innerHTML = "Happy Valentine's Day! ❤️";
+    message.style.color = "#ff4d6d";
+    message.style.marginTop = "15px";
+    gifContainer.appendChild(message);
+});
+yesBtn.addEventListener("click", () => {
+    question.innerHTML = "YAY! Can't wait, Nedhi! 🥰";
+    
+    // Hide the buttons
+    document.querySelector(".buttons").style.display = "none";
+    noBtn.style.display = "none";
+
+    // Show the GIF container and set the source
+    const gifContainer = document.getElementById("gifContainer");
+    const celebrationGif = document.getElementById("celebrationGif");
+    
+    gifContainer.style.display = "block";
+    // Using a direct link from Giphy's media server
+    celebrationGif.src = "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHY5M2Zidm5mZzRyeGZ6eGZ6eGZ6eGZ6eGZ6eGZ6eGZ6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/MDJ9IbM3vuzAbpG7bO/giphy.gif";
+
+    // Add the extra banner text
+    const message = document.createElement("h2");
+    message.innerHTML = "Happy Valentine's Day! ❤️";
+    message.style.color = "#ff4d6d";
+    message.style.marginTop = "15px";
+    gifContainer.appendChild(message);
+});
+
 
 
 
