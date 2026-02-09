@@ -40,3 +40,8 @@ button {
     color: white;
     position: absolute;
 }
+#noBtn {
+    position: absolute; /* This is the most important line! */
+    transition: 0.1s;
+}
+
