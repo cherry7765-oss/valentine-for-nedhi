@@ -20,8 +20,21 @@ noBtn.addEventListener("mouseover", () => {
     noBtn.style.top = `${randomY}px`;
 });
 
-// Logic for when she finally clicks "Yes"
 yesBtn.addEventListener("click", () => {
+    // 1. Change the heading message
     question.innerHTML = "YAY! Can't wait, Nedhi! 🥰";
-    noBtn.style.display = "none"; // Hide the No button after she says Yes
+
+    // 2. Clear the button area and show the GIF
+    const buttonsContainer = document.querySelector(".buttons");
+    buttonsContainer.innerHTML = `
+        <div style="margin-top: 20px;">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHY5M2Zidm5mZzRyeGZ6eGZ6eGZ6eGZ6eGZ6eGZ6eGZ6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/MDJ9IbM3vuzAbpG7bO/giphy.gif" 
+                 alt="Cute Cat" 
+                 style="width: 200px; border-radius: 10px;">
+            <h2 style="color: #ff4d6d; margin-top: 15px;">Happy Valentine's Day! ❤️</h2>
+        </div>
+    `;
+
+    // 3. Hide the No button just in case it's still floating around
+    noBtn.style.display = "none";
 });
