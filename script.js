@@ -1,19 +1,17 @@
+
 const noBtn = document.getElementById("noBtn");
-const container = document.querySelector(".container");
+const yesBtn = document.getElementById("yesBtn");
+const question = document.getElementById("question");
 
 noBtn.addEventListener("mouseover", () => {
-    // Get the size of the white box
-    const containerRect = container.getBoundingClientRect();
+    const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
+    const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
     
-    // Calculate max positions (Box size minus button size)
-    const maxX = containerRect.width - noBtn.offsetWidth;
-    const maxY = containerRect.height - noBtn.offsetHeight;
-
-    // Generate random position within those boundaries
-    const randomX = Math.floor(Math.random() * maxX);
-    const randomY = Math.floor(Math.random() * maxY);
-
-    noBtn.style.left = `${randomX}px`;
-    noBtn.style.top = `${randomY}px`;
+    noBtn.style.left = `${x}px`;
+    noBtn.style.top = `${y}px`;
 });
 
+yesBtn.addEventListener("click", () => {
+    question.innerHTML = "YAY! Can't wait, Nedhi! 🥰";
+    noBtn.style.display = "none";
+});
