@@ -44,4 +44,19 @@ button {
     position: absolute; /* This is the most important line! */
     transition: 0.1s;
 }
+.container {
+    position: relative; /* This keeps the button trapped inside */
+    width: 400px;       /* Set a specific width */
+    height: 400px;      /* Set a specific height */
+    margin: auto;
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+#noBtn {
+    position: absolute; /* Essential for movement */
+    transition: 0.1s;
+}
+
 
