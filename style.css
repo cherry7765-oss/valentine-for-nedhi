@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #ffcad4;
     font-family: 'Arial', sans-serif;
 }
@@ -32,12 +32,9 @@ button {
     background-color: #808080;
     color: white;
     position: absolute;
-}
-#noBtn {
-    position: absolute;
     transition: 0.1s; /* This creates the smooth "gliding" movement */
-    z-index: 10;     /* Keeps the button on top of other elements */
-}
+    z-index: 10;
+} 
 
 .container {
     position: relative;
