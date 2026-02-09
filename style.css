@@ -32,7 +32,7 @@ button {
     background-color: #808080;
     color: white;
     position: absolute;
-    transition: 0.1s; /* This creates the smooth "gliding" movement */
+    transition: left 0.01s ease, top 0.01s ease; /* This creates the smooth "gliding" movement */
     z-index: 10;
 } 
 
