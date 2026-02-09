@@ -34,7 +34,7 @@ yesBtn.addEventListener("click", () => {
     const buttonsContainer = document.querySelector(".buttons");
     buttonsContainer.innerHTML = `
         <div style="margin-top: 20px;">
-            <img src="https://media.giphy.com/media/MDJ9IbM3vuzAbpG7bO/giphy.gif"
+            <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif"
                  style="width: 200px; border-radius: 10px;">
             <h2 style="color: #ff4d6d;">Happy Valentine's Day ❤️</h2>
         </div>
