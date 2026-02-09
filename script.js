@@ -31,15 +31,14 @@ yesBtn.addEventListener("click", () => {
     question.innerHTML = "YAY! Can't wait, Nedhi! 🥰";
 
     // 3. Show the GIF
-const buttonsContainer = document.querySelector(".buttons");
-buttonsContainer.innerHTML = `
-    <div style="margin-top: 20px;">
-        <img src="https://media.giphy.com/media/MDJ9IbM3vuzAbpG7bO/giphy.gif"
-             alt="Cute Cat"
-             style="width: 200px; border-radius: 10px;">
-        <h2 style="color: #ff4d6d;">Happy Valentine's Day ❤️</h2>
-    </div>
-`;
+    const buttonsContainer = document.querySelector(".buttons");
+    buttonsContainer.innerHTML = `
+        <div style="margin-top: 20px;">
+            <img src="https://media.giphy.com/media/MDJ9IbM3vuzAbpG7bO/giphy.gif"
+                 style="width: 200px; border-radius: 10px;">
+            <h2 style="color: #ff4d6d;">Happy Valentine's Day ❤️</h2>
+        </div>
+    `;
 
     // 4. Hide the No button
     noBtn.style.display = "none";
