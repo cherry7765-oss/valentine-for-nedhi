@@ -4,7 +4,7 @@ const container = document.querySelector(".container");
 const question = document.getElementById("question");
 
 // This function runs EVERY time the mouse touches the "No" button
-noBtn.addEventListener("mouseover", () => {
+noBtn.addEventListener("mouseenter", () => {
     const containerRect = container.getBoundingClientRect();
     
     // Max coordinates based on the white box size
