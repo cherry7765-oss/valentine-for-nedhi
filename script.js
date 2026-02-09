@@ -25,4 +25,3 @@ yesBtn.addEventListener("click", () => {
     question.innerHTML = "YAY! Can't wait, Nedhi! 🥰";
     noBtn.style.display = "none"; // Hide the No button after she says Yes
 });
-
