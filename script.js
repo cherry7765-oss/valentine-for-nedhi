@@ -21,20 +21,26 @@ noBtn.addEventListener("mouseover", () => {
 });
 
 yesBtn.addEventListener("click", () => {
-    // 1. Change the heading message
+    // 1. Change the main question text
     question.innerHTML = "YAY! Can't wait, Nedhi! 🥰";
 
-    // 2. Clear the button area and show the GIF
+    // 2. Select the area where buttons were
     const buttonsContainer = document.querySelector(".buttons");
+    
+    // 3. Replace buttons with a reliable GIF and a sub-header
     buttonsContainer.innerHTML = `
-        <div style="margin-top: 20px;">
-            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHY5M2Zidm5mZzRyeGZ6eGZ6eGZ6eGZ6eGZ6eGZ6eGZ6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/MDJ9IbM3vuzAbpG7bO/giphy.gif" 
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-top: 20px;">
+            <img src="https://media.tenor.com/gU_79U6A2pgAAAAM/peach-goma-love.gif" 
                  alt="Cute Cat" 
-                 style="width: 200px; border-radius: 10px;">
-            <h2 style="color: #ff4d6d; margin-top: 15px;">Happy Valentine's Day! ❤️</h2>
+                 style="width: 150px; height: auto; border-radius: 10px;">
+            <h2 style="color: #ff4d6d; margin-top: 15px; font-size: 1.5rem;">Happy Valentine's Day! ❤️</h2>
         </div>
     `;
 
-    // 3. Hide the No button just in case it's still floating around
+    // 4. Make sure the No button is gone
     noBtn.style.display = "none";
 });
+
+
+
+    
