@@ -29,6 +29,8 @@ button:hover {
 #yesBtn {
     background-color: #ff4d6d;
     color: white;
+    position: relative;
+    margin-right: 15px;
 }
 
 #noBtn {
