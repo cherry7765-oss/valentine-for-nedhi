@@ -6,7 +6,9 @@ body {
     background-color: #ffcad4;
     font-family: 'Arial', sans-serif;
 }
-
+body {
+    user-select: none;
+}
 .buttons {
     margin-top: 20px;
     position: relative;
@@ -53,6 +55,12 @@ button:hover {
     text-align: center;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
-
+background: linear-gradient(135deg, #ffcad4, #ffc2d1, #ffafcc);
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
 
 
