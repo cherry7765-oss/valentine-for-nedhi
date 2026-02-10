@@ -7,8 +7,9 @@ const question = document.getElementById("question");
 noBtn.addEventListener("mouseenter", () => {
     const containerRect = container.getBoundingClientRect();
 
-    const maxX = containerRect.width - noBtn.offsetWidth;
-    const maxY = containerRect.height - noBtn.offsetHeight;
+    const padding = 20;
+const maxX = containerRect.width - noBtn.offsetWidth - padding;
+const maxY = containerRect.height - noBtn.offsetHeight - padding;
 
     const randomX = Math.floor(Math.random() * maxX);
     const randomY = Math.floor(Math.random() * maxY);
